@@ -42,7 +42,7 @@ class Puzzle:
                 #if the empty tile is at the top 2 rows, move the tile down
                 if getZeroLocation+3<=9 and direct==1:
                     temp=subNode[node.index('0')]
-                    subNode[node.index('0')]=subNzzode[node.index('0')+3]
+                    subNode[node.index('0')]=subNode[node.index('0')+3]
                     subNode[node.index('0')+3]=temp
                     self.StartNode=subNode
                     return
